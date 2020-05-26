@@ -47,7 +47,6 @@ header nav.menu-desktop {
 
 nav.menu-mobile {
     display: none;
-    
 }
 
 nav.menu-desktop ul {
@@ -69,7 +68,7 @@ nav.menu-desktop li a {
     max-width: 700px;
     float: right;
     padding: 100px 30px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .chamada1 h1 {
@@ -91,7 +90,6 @@ nav.menu-desktop li a {
     height: 450px;
     position: relative;
 }
-
 
 .texto-info {
     float: left;
@@ -140,7 +138,8 @@ nav.menu-desktop li a {
 }
 
 .chamada2 {
-    padding: 80px 2%;
+    background-color: rgb(211, 164, 223);
+    padding: 80px 2% 0px 2%;
     text-align: center;
 }
 
@@ -157,9 +156,189 @@ nav.menu-desktop li a {
 
 .chamada2 img {
     width: 90%;
-    
-    margin: 20px 0px;
+    margin-top: 20px;
+    position: relative;
+    top: 70px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 40px black;
 }
+
+.parte-esquerda {
+    float: left;
+    color: white;
+    width: 50%;
+    height: 100%;
+    padding: 120px 0px 50px 0px;
+    background-color: rgb(163, 77, 206);
+}
+
+.wraper-esquerda {
+    float: right;
+    width: 70%;
+    padding-right: 20px;
+}
+.parte-esquerda h2 {
+    font-style: italic;
+    font-size: 30px;
+}
+.parte-esquerda p {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.parte-direita {
+    float: left;
+    /*background-color: rgb(211, 164, 223);*/
+    width: 50%;
+    height: 100%;
+    padding: 120px 0px 50px 0px;
+}
+
+.sobre-autor {
+    float: left;
+    padding-left: 25px ;
+    width: 90%;
+    
+}
+
+.nome_foto-autor{
+    width: 100%; 
+}
+
+.wraper-nome-autor {
+    float: left;
+}
+
+.wraper-nome-autor h2 {
+    font-family: 'minhafonte';
+}
+
+.wraper-nome-autor p {
+    font-style: italic;
+    padding-top: 2px;
+} 
+
+.nome_foto-autor .img-autor {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: teal;
+    margin-left: 20px;
+    transform: translateY(-15%);
+}
+
+.nome_foto-autor .img-autor span {
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.texto-autor {
+    margin-top: 10px;
+    width: 70%;
+}
+
+.slider-bullets {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.slider-bullets span {
+    float: left;
+    margin-right: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(141, 139, 139);
+    cursor: pointer;
+}
+
+.chamada4 {
+    background-color: rgb(70, 21, 116);
+    padding: 85px 0;
+}
+
+.formulario {
+    float: left;
+    width: 50%;
+    color: white;
+}
+
+.wraper-form {
+    padding: 0 2%;
+}
+
+.formulario h2 {
+    font-size: 34px;
+}
+
+.formulario p {
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+    width: 80%;
+}
+
+form input, form textarea {
+    width: 90%;
+    max-width: 480px;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+form input[type=submit] {
+    background-color: rgb(216, 117, 216);
+    border: 0;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.sessao-map {
+    float: left;
+    width: 49%;
+    color: white;
+}
+
+.sessao-map h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.mapwrap1 {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+.mapwrap2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 245, 250);
+}
+
+
+
+
+
 
 
 
@@ -201,7 +380,6 @@ nav.menu-desktop li a {
         width: 70%;
         margin: 0px auto ;
         padding: 50px 0;
-        
     }
 
     .texto-info h2 {
@@ -214,8 +392,7 @@ nav.menu-desktop li a {
         font-size: 20px;
         width: 150px;
         margin: 5px auto;
-        text-align: left;
-               
+        text-align: left;    
     }
     .botao-info {
         margin: 0px auto;
@@ -229,7 +406,16 @@ nav.menu-desktop li a {
     }
 }
 
-@media screen and (max-width: 760px) {
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
     
     .chamada1 h1 {
         font-size: 40px;
@@ -248,7 +434,67 @@ nav.menu-desktop li a {
         height: 450px;
         width: 400px;
     }
+    .parte-esquerda {
+        width: 100%;
+    }
+
+    .wraper-esquerda {
+       float: none;
+       display: inline-block;
+       width: 85%;
+       padding-left: 20px;
+    }
+
+    .parte-direita {
+        width: 100%;
+    }
+
+    .formulario{
+        width: 100%;
+        text-align: center;
+    }
+
+    .chamada4 .center {
+        text-align: center;
+    }
+
+    .formulario p {
+        margin: 10px auto;
+        margin-bottom: 20px;
+    }
+
+    .sessao-map {
+        float: none;
+        width: 95%;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .mapwrap1 {
+        width: 100%;
+        padding-top: 80%;
+        max-width: none;
+        position: relative;
+    }
+
+    .mapwrap2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 0;
+        height: 100%;
+    }
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 420px) {
 
@@ -278,7 +524,6 @@ nav.menu-desktop li a {
     .menu-mobile:hover  ul {
         display: inline-block;
         opacity: 0.8;
-        
     }
 
     .menu-mobile ul {
@@ -292,7 +537,6 @@ nav.menu-desktop li a {
         left: 50%;
         transform: translateX(-50%);
         width: 97%;
-        
         border-radius: 10px;
     }
   
@@ -310,6 +554,10 @@ nav.menu-desktop li a {
         text-decoration: none;
         color: black;
     }
+    
+    .botao-info {
+        padding: 0px 3px;
+    }
  
     .device-info {
         margin: 0 auto;
@@ -317,6 +565,13 @@ nav.menu-desktop li a {
         width: 280px;
     }
     
+    .chamada2 img {
+        border-radius: 15px;
+        box-shadow: 5px 5px 9px black;
+    }
+    .mapwrap1 {
+        padding-top: 100%;
+    }
 }
 
 
