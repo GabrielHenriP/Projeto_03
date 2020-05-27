@@ -67,7 +67,7 @@ nav.menu-desktop li a {
 .chamada1 {
     max-width: 700px;
     float: right;
-    padding: 100px 30px;
+    padding: 60px 30px;
     margin-top: 0px;
 }
 
@@ -154,13 +154,24 @@ nav.menu-desktop li a {
     display: inline-block;
 }
 
-.chamada2 img {
-    width: 90%;
+.wraper-img {
+    width: 100%;
+    max-width: 1024px;
+    border: 2ps solid white;
+}
+.chamada2 .img {
+    width: 80%;
+    padding-top: 45%;
+    background-image: url('../imagens/tela.jpg');
+    background-size: cover;
+    background-position: center;
     margin-top: 20px;
     position: relative;
-    top: 70px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 15px;
-    box-shadow: 10px 10px 40px black;
+    box-shadow:15px 15px 20px black;
 }
 
 .parte-esquerda {
@@ -220,17 +231,13 @@ nav.menu-desktop li a {
 
 .nome_foto-autor .img-autor {
     float: left;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background-color: teal;
+    background-image: url('../imagens/foto-autor.jpg');
+    background-size: 100% 100%;
     margin-left: 20px;
     transform: translateY(-15%);
-}
-
-.nome_foto-autor .img-autor span {
-    line-height: 40px;
-    margin-left: 10px;
 }
 
 .texto-autor {
@@ -326,13 +333,30 @@ form input[type=submit] {
     padding-top: 100%;
 }
 
-.map {
+.mapwrap2 iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgb(250, 245, 250);
+}
+
+footer {
+    background-color: rgb(67, 51, 99);
+    padding: 40px 2%;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+footer a {
+    color: rgb(15, 187, 240);
 }
 
 
@@ -390,7 +414,7 @@ form input[type=submit] {
     }
     .texto-info li {
         font-size: 20px;
-        width: 150px;
+        width: 160px;
         margin: 5px auto;
         text-align: left;    
     }
@@ -416,10 +440,14 @@ form input[type=submit] {
 
 
 @media screen and (max-width: 780px) {
-    
+    .chamada1 {
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+
     .chamada1 h1 {
         font-size: 40px;
-        margin: 30px 0px;
+        margin: 10px 0px 30px 0px;
     }
     nav ul li {
         font-size: 20px;
@@ -559,16 +587,21 @@ form input[type=submit] {
         padding: 0px 3px;
     }
  
+    .chamada2 .img {
+        width: 90%;
+        padding-top: 80%;
+    }
+
     .device-info {
         margin: 0 auto;
         height: 330px;
         width: 280px;
     }
     
-    .chamada2 img {
-        border-radius: 15px;
-        box-shadow: 5px 5px 9px black;
+    .img-autor {
+        margin-top: 20px;
     }
+
     .mapwrap1 {
         padding-top: 100%;
     }
