@@ -360,14 +360,6 @@ footer a {
 }
 
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 880px) {
     header nav.menu-desktop {
         float: none;
@@ -429,14 +421,6 @@ footer a {
         height: 600px
     }
 }
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 780px) {
@@ -516,14 +500,6 @@ footer a {
 }
 
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 420px) {
 
     .device-info {
@@ -548,15 +524,15 @@ footer a {
         cursor: pointer;
         margin-right: 5px;
     }
-
+    /*
     .menu-mobile:hover  ul {
         display: inline-block;
         opacity: 0.8;
-    }
+        transition: 1s;
+    }*/
 
     .menu-mobile ul {
-        opacity: 0;
-        transition: opacity 1s;
+        display: none;
         text-align: center;
         background-color: white;
         list-style-type: none;
@@ -582,7 +558,11 @@ footer a {
         text-decoration: none;
         color: black;
     }
-    
+
+    .chamada1 {
+        margin-top: 50px;
+    }
+
     .botao-info {
         padding: 0px 3px;
     }
@@ -606,14 +586,3 @@ footer a {
         padding-top: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
