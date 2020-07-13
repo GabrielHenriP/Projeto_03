@@ -202,14 +202,21 @@ nav.menu-desktop li a {
     /*background-color: rgb(211, 164, 223);*/
     width: 50%;
     height: 100%;
-    padding: 120px 0px 50px 0px;
+    padding: 120px 0px 40px 0px;
+}
+
+.scroll {
+    max-width: 600px;
+    padding-left: 25px ;
+    overflow: hidden;
+}
+.scroll-wraper{
+    width: 100%;
 }
 
 .sobre-autor {
     float: left;
-    padding-left: 25px ;
-    width: 90%;
-    
+    width: 100%;
 }
 
 .nome_foto-autor{
@@ -237,7 +244,7 @@ nav.menu-desktop li a {
     background-image: url('../imagens/foto-autor.jpg');
     background-size: 100% 100%;
     margin-left: 20px;
-    transform: translateY(-15%);
+    transform: translateY(0%);
 }
 
 .texto-autor {
@@ -257,7 +264,8 @@ nav.menu-desktop li a {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgb(141, 139, 139);
+    background-color: rgb(170, 170, 170);
+    
     cursor: pointer;
 }
 
